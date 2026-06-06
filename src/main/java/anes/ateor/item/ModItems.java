@@ -1,6 +1,7 @@
 package anes.ateor.item;
 
 import anes.ateor.AteorMod;
+import anes.ateor.block.ModBlocks;
 import anes.ateor.food.ModFoods;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
@@ -36,6 +37,9 @@ public class ModItems {
         });
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
             output.accept(NEBULA);
+        });
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register(output -> {
+            output.accept(ModBlocks.NEBULA_FRAGMENT_BLOCK);
         });
     }
 }

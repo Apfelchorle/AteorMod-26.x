@@ -1,6 +1,7 @@
 package anes.ateor;
 
 import anes.ateor.CustomCreativeTab.ModTabs;
+import anes.ateor.block.ModBlocks;
 import anes.ateor.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,7 +16,8 @@ public class AteorMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Hello world from usfl");
-		// Code Runs As Soon As Game is Ready.
+		// Code Runs As Soon As Game Initializes.
+		ModBlocks.registerModBlocks();
 		ModTabs.registertabs();
 		ModItems.registerModItem();
 	}

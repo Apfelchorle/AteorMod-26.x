@@ -2,6 +2,7 @@ package anes.ateor.CustomCreativeTab;
 
 
 import anes.ateor.AteorMod;
+import anes.ateor.block.ModBlocks;
 import anes.ateor.item.ModItems;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
@@ -21,6 +22,7 @@ public class ModTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.NEBULAGAS);
                         output.accept(ModItems.NEBULA);
+                        output.accept(ModBlocks.NEBULA_FRAGMENT_BLOCK);
                     }).build());
 
     public static void registertabs() {

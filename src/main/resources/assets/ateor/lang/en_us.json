@@ -1,5 +1,6 @@
 {
   "item.ateor.nebulagas": "Nebula Gas",
   "item.ateor.nebula": "Nebula Fragment",
-  "creativemodetab.ateormod.nebula_items": "Nebula Items"
+  "creativemodetab.ateormod.nebula_items": "Nebula Items",
+  "block.ateor.nebula_fragment": "Nebula Fragment Block"
 }
