@@ -29,7 +29,7 @@ public class ModItems {
                 itemFunction.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(AteorMod.MOD_ID, name)))));
     }
     public static void registerModItem() {
-        AteorMod.LOGGER.info("Registering ModItems" + AteorMod.MOD_ID);
+        AteorMod.LOGGER.info("Registering ModItems for " + AteorMod.MOD_ID);
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {
             output.accept(NEBULAGAS);
