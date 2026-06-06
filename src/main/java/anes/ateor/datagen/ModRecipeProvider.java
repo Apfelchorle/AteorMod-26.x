@@ -8,6 +8,9 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.CookingBookCategory;
+import net.minecraft.world.item.crafting.CraftingBookCategory;
+import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.ItemLike;
 
 import java.util.ArrayList;
@@ -24,6 +27,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         return new RecipeProvider(registries, output) {
             @Override
             public void buildRecipes() { // makes recipes n shi
+
+
+                // Recipe for Processed Nebula Fragment
+
+                List<ItemLike> NEBULAGAS_SMELTABLES = List.of(ModItems.UNPROCESSED_NEBULA);
+                oreSmelting(
+                        NEBULAGAS_SMELTABLES,
+                        RecipeCategory.BREWING,
+                        CookingBookCategory.MISC,
+                        ModItems.NEBULA,
+                        30,
+                        '1',
+                        "nebulagas"
+                );
+
+                // Recipe for Nebulagas.
                 List<ItemLike> NEBULAGAS_CONSUMABLES = List.of(ModItems.NEBULAGAS);
 
                 shapeless(RecipeCategory.BREWING, ModItems.NEBULAGAS)

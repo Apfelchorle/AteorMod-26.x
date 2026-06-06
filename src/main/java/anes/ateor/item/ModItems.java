@@ -20,6 +20,7 @@ public class ModItems {
     public static final Item NEBULAGAS = registerItem("nebulagas", properties -> new Item(properties
             .food(ModFoods.NEBULAGAS, ModFoods.NEBULAGAS_CONSUMABLE)));
     public static final Item NEBULA = registerItem("nebula", Item::new);
+    public static final Item UNPROCESSED_NEBULA = registerItem("unprocessed_nebula", Item::new);
 
 
 
@@ -37,6 +38,7 @@ public class ModItems {
         });
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
             output.accept(NEBULA);
+            output.accept(UNPROCESSED_NEBULA);
         });
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register(output -> {
             output.accept(ModBlocks.NEBULA_FRAGMENT_BLOCK);

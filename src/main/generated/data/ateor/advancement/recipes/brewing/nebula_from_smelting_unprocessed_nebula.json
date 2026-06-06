@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ateor:nebula_from_smelting_unprocessed_nebula"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_unprocessed_nebula": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ateor:unprocessed_nebula"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_unprocessed_nebula"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ateor:nebula_from_smelting_unprocessed_nebula"
+    ]
+  }
+}

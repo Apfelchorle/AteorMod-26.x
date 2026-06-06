@@ -23,6 +23,7 @@ public class ModTabs {
                         output.accept(ModItems.NEBULAGAS);
                         output.accept(ModItems.NEBULA);
                         output.accept(ModBlocks.NEBULA_FRAGMENT_BLOCK);
+                        output.accept(ModItems.UNPROCESSED_NEBULA);
                     }).build());
 
     public static void registertabs() {

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 49,
+  "experience": 30.0,
+  "group": "nebulagas",
+  "ingredient": "ateor:unprocessed_nebula",
+  "result": {
+    "id": "ateor:nebula"
+  }
+}

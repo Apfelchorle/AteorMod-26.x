@@ -24,5 +24,6 @@ public class ModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
         itemModelGenerators.generateFlatItem(ModItems.NEBULAGAS, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.NEBULA, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.UNPROCESSED_NEBULA, ModelTemplates.FLAT_ITEM);
     }
 }

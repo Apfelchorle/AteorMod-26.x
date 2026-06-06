@@ -1,6 +1,7 @@
 {
   "item.ateor.nebulagas": "Nebula Gas",
   "item.ateor.nebula": "Nebula Fragment",
+  "item.ateor.unprocessed_nebula": "UNProcessed Nebula Ore",
   "creativemodetab.ateormod.nebula_items": "Nebula Items",
   "block.ateor.nebula_fragment": "Nebula Fragment Block"
 }
