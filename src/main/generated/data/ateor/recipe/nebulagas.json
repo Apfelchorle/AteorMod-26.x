@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "nebulagas",
+  "ingredients": [
+    "ateor:nebula",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "ateor:nebulagas"
+  }
+}
