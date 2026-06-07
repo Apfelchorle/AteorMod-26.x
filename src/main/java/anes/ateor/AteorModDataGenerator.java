@@ -1,6 +1,8 @@
 package anes.ateor;
 
 
+import anes.ateor.datagen.ModBlockTagsProvider;
+import anes.ateor.datagen.ModLootTableProvider;
 import anes.ateor.datagen.ModRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
@@ -13,5 +15,7 @@ public class AteorModDataGenerator implements DataGeneratorEntrypoint {
 
 		pack.addProvider(ModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModBlockTagsProvider::new);
+		pack.addProvider(ModLootTableProvider::new);
 	}
 }
