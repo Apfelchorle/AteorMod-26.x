@@ -51,6 +51,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModItems.NEBULA), has(ModItems.NEBULA))
                         .group("nebulagas")
                         .save(output);
+
+                // TODO: Recipe for Nebula sticks
             }
         };
     }
