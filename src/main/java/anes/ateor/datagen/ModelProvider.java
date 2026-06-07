@@ -19,6 +19,8 @@ public class ModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
         blockModelGenerators.createTrivialCube(ModBlocks.NEBULA_FRAGMENT_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.NEBULA_LOG);
+        blockModelGenerators.createTrivialCube(ModBlocks.NEBULA_PLANKS);
     }
 
     @Override
@@ -28,6 +30,5 @@ public class ModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.UNPROCESSED_NEBULA, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.NEBULA_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.NEBULA_STICKS, ModelTemplates.FLAT_ITEM);
-//        itemModelGenerators.generateFlatItem(ModBlocks.NEBULA_WOOD, ModelTemplates.FLAT_ITEM);
     }
 }

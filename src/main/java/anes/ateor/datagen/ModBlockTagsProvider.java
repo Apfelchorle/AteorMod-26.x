@@ -15,6 +15,10 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider registries) {
+        valueLookupBuilder(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.NEBULA_LOG)
+                .add(ModBlocks.NEBULA_PLANKS);
+
         valueLookupBuilder(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.NEBULA_FRAGMENT_BLOCK);
 

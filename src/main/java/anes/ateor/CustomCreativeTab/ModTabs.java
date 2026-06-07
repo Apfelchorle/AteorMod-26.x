@@ -12,6 +12,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 
 public class ModTabs {
 
@@ -24,6 +25,9 @@ public class ModTabs {
                         output.accept(ModItems.NEBULA);
                         output.accept(ModBlocks.NEBULA_FRAGMENT_BLOCK);
                         output.accept(ModItems.UNPROCESSED_NEBULA);
+                        output.accept(ModBlocks.NEBULA_PLANKS);
+                        output.accept(ModBlocks.NEBULA_LOG);
+                        output.accept(ModItems.NEBULA_STICKS);
                     }).build());
 
     public static void registertabs() {

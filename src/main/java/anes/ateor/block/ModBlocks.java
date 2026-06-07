@@ -19,6 +19,12 @@ public class ModBlocks {
     public static final Block NEBULA_FRAGMENT_BLOCK = registerBlock("nebula_fragment",
             properties -> new Block(properties.strength(4F)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+    public static final Block NEBULA_LOG = registerBlock("nebula_log",
+            properties -> new Block(properties.strength(1F)
+                    .sound(SoundType.NETHER_WOOD)));
+    public static final Block NEBULA_PLANKS = registerBlock("nebula_planks",
+            properties -> new Block(properties.strength(1F)
+                    .sound(SoundType.NETHER_WOOD)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(AteorMod.MOD_ID, name))));

@@ -24,7 +24,11 @@ public class ModItems {
     public static final Item NEBULA = registerItem("nebula", Item::new);
     public static final Item UNPROCESSED_NEBULA = registerItem("unprocessed_nebula", Item::new);
     public static final Item NEBULA_PICKAXE = registerItem("nebula_pickaxe", properties -> new Item(properties.pickaxe(ToolMaterial.NETHERITE,12,3)));
-    public static final Item NEBULA_STICKS = registerItem("nebula_stick", Item::new);
+
+    // wood n planks
+    public static final Item NEBULA_STICKS = registerItem("nebula_sticks", Item::new);
+//    public static final Item NEBULA_LOGS = registerItem("nebula_log", Item::new);
+//    public static final Item NEBULA_PLANKS = registerItem("nebula_planks", Item::new);
 
 
     private static Item registerItem(String name, Function<Item.Properties, Item> itemFunction) {
@@ -45,6 +49,8 @@ public class ModItems {
         });
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register(output -> {
             output.accept(ModBlocks.NEBULA_FRAGMENT_BLOCK);
+            output.accept(ModBlocks.NEBULA_PLANKS);
+            output.accept(ModBlocks.NEBULA_LOG);
         });
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(output -> {
             output.accept(ModItems.NEBULA_PICKAXE);

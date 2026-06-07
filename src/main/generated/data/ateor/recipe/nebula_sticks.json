@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "nebulagas",
+  "key": {
+    "P": "ateor:nebula_planks"
+  },
+  "pattern": [
+    "P",
+    "P"
+  ],
+  "result": {
+    "id": "ateor:nebula_sticks"
+  }
+}

@@ -1,10 +1,11 @@
 {
   "item.ateor.nebulagas": "Nebula Gas",
   "item.ateor.nebula": "Nebula Fragment",
-  "item.ateor.unprocessed_nebula": "UNProcessed Nebula Ore",
+  "item.ateor.unprocessed_nebula": "Raw Nebula Ore",
   "item.ateor.nebula_pickaxe": "Nebula Pickaxe",
   "item.ateor.nebula_sticks": "Nebula Sticks",
-  "item.ateor.nebula_wood": "Nebula Wood",
   "creativemodetab.ateormod.nebula_items": "Nebula Items",
-  "block.ateor.nebula_fragment": "Nebula Fragment Block"
+  "block.ateor.nebula_fragment": "Nebula Fragment Block",
+  "block.ateor.nebula_log": "Nebula Logs",
+  "block.ateor.nebula_planks": "Nebula Planks"
 }

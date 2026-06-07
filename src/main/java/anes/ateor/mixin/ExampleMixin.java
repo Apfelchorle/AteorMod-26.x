@@ -1,5 +1,6 @@
 package anes.ateor.mixin;
 
+import anes.ateor.AteorMod;
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -11,5 +12,6 @@ public class ExampleMixin {
 	@Inject(at = @At("HEAD"), method = "loadLevel")
 	private void init(CallbackInfo info) {
 		// This code is injected into the start of MinecraftServer.loadLevel()V
+		AteorMod.LOGGER.info("Loading level " + AteorMod.MOD_ID);
 	}
 }
