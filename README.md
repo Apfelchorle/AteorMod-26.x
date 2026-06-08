@@ -1,5 +1,13 @@
 # ateor mod
 
+
+# WOOLS
+
+Image Showcasing All Current Wool Blocks in the Mod
+
+
+![Image](https://raw.githubusercontent.com/Apfelchorle/AteorMod-26.x/refs/heads/master/images/blocks.png)
+
 ## Setup
 
 ### Building
