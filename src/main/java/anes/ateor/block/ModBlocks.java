@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 
 public class ModBlocks {
 
@@ -70,6 +71,152 @@ public class ModBlocks {
                 properties.strength(3F).sound(SoundType.WOOL)
             )
     );
+
+    // Wool Stairs + Slabs Created Using CreateWool Method
+    public static final Block RED_WOOL_STAIRS = CreateWoolStairs(
+        "red_wool_stairs",
+        Blocks.RED_WOOL.defaultBlockState()
+    );
+    public static final Block RED_WOOL_SLABS = CreateWoolSlabs(
+        "red_wool_slabs"
+    );
+
+    // public static final Block CYAN_WOOL_STAIRS = CreateWoolStairs(
+    //     "cyan_wool_stairs",
+    //     Blocks.CYAN_WOOL.defaultBlockState()
+    // );
+    // public static final Block CYAN_WOOL_SLABS = CreateWoolSlabs(
+    //     "cyan_wool_stairs"
+    // );
+
+    public static final Block BLACK_WOOL_STAIRS = CreateWoolStairs(
+        "black_wool_stairs",
+        Blocks.BLACK_WOOL.defaultBlockState()
+    );
+    public static final Block BLACK_WOOL_SLABS = CreateWoolSlabs(
+        "black_wool_slabs"
+    );
+
+    public static final Block BLUE_WOOL_STAIRS = CreateWoolStairs(
+        "blue_wool_stairs",
+        Blocks.BLUE_WOOL.defaultBlockState()
+    );
+    public static final Block BLUE_WOOL_SLABS = CreateWoolSlabs(
+        "blue_wool_slabs"
+    );
+
+    public static final Block YELLOW_WOOL_STAIRS = CreateWoolStairs(
+        "yellow_wool_stairs",
+        Blocks.YELLOW_WOOL.defaultBlockState()
+    );
+    public static final Block YELLOW_WOOL_SLABS = CreateWoolSlabs(
+        "yellow_wool_slabs"
+    );
+
+    public static final Block PINK_WOOL_STAIRS = CreateWoolStairs(
+        "pink_wool_stairs",
+        Blocks.PINK_WOOL.defaultBlockState()
+    );
+
+    public static final Block PINK_WOOL_SLABS = CreateWoolSlabs(
+        "pink_wool_slabs"
+    );
+
+    public static final Block MAGENTA_WOOL_STAIRS = CreateWoolStairs(
+        "magenta_wool_stairs",
+        Blocks.MAGENTA_WOOL.defaultBlockState()
+    );
+
+    public static final Block MAGENTA_WOOL_SLABS = CreateWoolSlabs(
+        "magenta_wool_slabs"
+    );
+
+    public static final Block GREEN_WOOL_STAIRS = CreateWoolStairs(
+        "green_wool_stairs",
+        Blocks.GREEN_WOOL.defaultBlockState()
+    );
+
+    public static final Block GREEN_WOOL_SLABS = CreateWoolSlabs(
+        "green_wool_slabs"
+    );
+
+    public static final Block LIGHT_GRAY_WOOL_STAIRS = CreateWoolStairs(
+        "light_gray_wool_stairs",
+        Blocks.LIGHT_GRAY_WOOL.defaultBlockState()
+    );
+
+    public static final Block LIGHT_GRAY_WOOL_SLABS = CreateWoolSlabs(
+        "light_gray_wool_slabs"
+    );
+
+    public static final Block GRAY_WOOL_STAIRS = CreateWoolStairs(
+        "gray_wool_stairs",
+        Blocks.GRAY_WOOL.defaultBlockState()
+    );
+
+    public static final Block GRAY_WOOL_SLABS = CreateWoolSlabs(
+        "gray_wool_slabs"
+    );
+
+    public static final Block BROWN_WOOL_STAIRS = CreateWoolStairs(
+        "brown_wool_stairs",
+        Blocks.BROWN_WOOL.defaultBlockState()
+    );
+
+    public static final Block BROWN_WOOL_SLABS = CreateWoolSlabs(
+        "brown_wool_slabs"
+    );
+
+    public static final Block ORANGE_WOOL_STAIRS = CreateWoolStairs(
+        "orange_wool_stairs",
+        Blocks.ORANGE_WOOL.defaultBlockState()
+    );
+
+    public static final Block ORANGE_WOOL_SLABS = CreateWoolSlabs(
+        "orange_wool_slabs"
+    );
+
+    public static final Block LIME_WOOL_STAIRS = CreateWoolStairs(
+        "lime_wool_stairs",
+        Blocks.LIME_WOOL.defaultBlockState()
+    );
+
+    public static final Block LIME_WOOL_SLABS = CreateWoolSlabs(
+        "lime_wool_slabs"
+    );
+
+    public static final Block LIGHT_BLUE_WOOL_STAIRS = CreateWoolStairs(
+        "light_blue_wool_stairs",
+        Blocks.LIGHT_BLUE_WOOL.defaultBlockState()
+    );
+
+    public static final Block LIGHT_BLUE_WOOL_SLABS = CreateWoolSlabs(
+        "light_blue_wool_slabs"
+    );
+
+    public static final Block PURPLE_WOOL_STAIRS = CreateWoolStairs(
+        "purple_wool_stairs",
+        Blocks.PURPLE_WOOL.defaultBlockState()
+    );
+
+    public static final Block PURPLE_WOOL_SLABS = CreateWoolSlabs(
+        "purple_wool_slabs"
+    );
+
+    private static Block CreateWoolStairs(String name, BlockState blockState) {
+        return registerBlock(name, properties ->
+            new StairBlock(
+                blockState,
+                properties.strength(1F).sound(SoundType.WOOL)
+            )
+        );
+    }
+
+    private static Block CreateWoolSlabs(String name) {
+        return registerBlock(name, properties ->
+            new SlabBlock(properties.strength(1F).sound(SoundType.WOOL))
+        );
+    }
 
     private static Block registerBlock(
         String name,

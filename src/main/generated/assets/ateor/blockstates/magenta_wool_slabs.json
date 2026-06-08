@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ateor:block/magenta_wool_slabs"
+    },
+    "type=double": {
+      "model": "minecraft:block/magenta_wool"
+    },
+    "type=top": {
+      "model": "ateor:block/magenta_wool_slabs_top"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ateor:block/pink_wool_slabs"
+    },
+    "type=double": {
+      "model": "minecraft:block/pink_wool"
+    },
+    "type=top": {
+      "model": "ateor:block/pink_wool_slabs_top"
+    }
+  }
+}

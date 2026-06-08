@@ -15,6 +15,43 @@ import net.minecraft.world.level.ItemLike;
 
 public class ModTabs {
 
+    public static final CreativeModeTab WOOL_TAB = Registry.register(
+        BuiltInRegistries.CREATIVE_MODE_TAB,
+        Identifier.fromNamespaceAndPath(AteorMod.MOD_ID, "wool"),
+        FabricCreativeModeTab.builder()
+            .icon(() -> new ItemStack(ModBlocks.PINK_WOOL_STAIRS))
+            .title(Component.translatable("creativemodetab.ateormod.wool"))
+            .displayItems((parameters, output) -> {
+                output.accept(ModBlocks.WOOL_SLABS);
+                output.accept(ModBlocks.WOOL_STAIRS);
+                output.accept(ModBlocks.PINK_WOOL_SLABS);
+                output.accept(ModBlocks.PINK_WOOL_STAIRS);
+                output.accept(ModBlocks.BLACK_WOOL_SLABS);
+                output.accept(ModBlocks.BLACK_WOOL_STAIRS);
+                output.accept(ModBlocks.BLUE_WOOL_SLABS);
+                output.accept(ModBlocks.BLUE_WOOL_STAIRS);
+                output.accept(ModBlocks.YELLOW_WOOL_SLABS);
+                output.accept(ModBlocks.YELLOW_WOOL_STAIRS);
+                output.accept(ModBlocks.MAGENTA_WOOL_SLABS);
+                output.accept(ModBlocks.MAGENTA_WOOL_STAIRS);
+                output.accept(ModBlocks.LIGHT_BLUE_WOOL_SLABS);
+                output.accept(ModBlocks.LIGHT_BLUE_WOOL_STAIRS);
+                output.accept(ModBlocks.GREEN_WOOL_SLABS);
+                output.accept(ModBlocks.GREEN_WOOL_STAIRS);
+                output.accept(ModBlocks.ORANGE_WOOL_SLABS);
+                output.accept(ModBlocks.ORANGE_WOOL_STAIRS);
+                output.accept(ModBlocks.BROWN_WOOL_SLABS);
+                output.accept(ModBlocks.BROWN_WOOL_STAIRS);
+                output.accept(ModBlocks.GRAY_WOOL_SLABS);
+                output.accept(ModBlocks.GRAY_WOOL_STAIRS);
+                output.accept(ModBlocks.LIGHT_GRAY_WOOL_SLABS);
+                output.accept(ModBlocks.LIGHT_GRAY_WOOL_STAIRS);
+                output.accept(ModBlocks.LIME_WOOL_SLABS);
+                output.accept(ModBlocks.LIME_WOOL_STAIRS);
+            })
+            .build()
+    );
+
     public static final CreativeModeTab NEBULA_TAB = Registry.register(
         BuiltInRegistries.CREATIVE_MODE_TAB,
         Identifier.fromNamespaceAndPath(AteorMod.MOD_ID, "nebula_items"),
@@ -38,6 +75,16 @@ public class ModTabs {
                 // minecraft new update preview blocks
                 output.accept(ModBlocks.WOOL_SLABS);
                 output.accept(ModBlocks.WOOL_STAIRS);
+                output.accept(ModBlocks.PINK_WOOL_SLABS);
+                output.accept(ModBlocks.PINK_WOOL_STAIRS);
+                output.accept(ModBlocks.BLACK_WOOL_SLABS);
+                output.accept(ModBlocks.BLACK_WOOL_STAIRS);
+                output.accept(ModBlocks.BLUE_WOOL_SLABS);
+                output.accept(ModBlocks.BLUE_WOOL_STAIRS);
+                output.accept(ModBlocks.YELLOW_WOOL_SLABS);
+                output.accept(ModBlocks.YELLOW_WOOL_STAIRS);
+                // output.accept(ModBlocks.CYAN_WOOL_SLABS);
+                // output.accept(ModBlocks.CYAN_WOOL_STAIRS);
             })
             .build()
     );

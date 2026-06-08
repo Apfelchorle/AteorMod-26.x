@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ateor:block/lime_wool_slabs"
+    },
+    "type=double": {
+      "model": "minecraft:block/lime_wool"
+    },
+    "type=top": {
+      "model": "ateor:block/lime_wool_slabs_top"
+    }
+  }
+}
