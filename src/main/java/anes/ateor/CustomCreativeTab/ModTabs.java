@@ -1,6 +1,5 @@
 package anes.ateor.CustomCreativeTab;
 
-
 import anes.ateor.AteorMod;
 import anes.ateor.block.ModBlocks;
 import anes.ateor.item.ModItems;
@@ -16,25 +15,34 @@ import net.minecraft.world.level.ItemLike;
 
 public class ModTabs {
 
-    public static final CreativeModeTab NEBULA_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
-            Identifier.fromNamespaceAndPath(AteorMod.MOD_ID, "nebula_items"),
-            FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModItems.NEBULAGAS))
-                    .title(Component.translatable("creativemodetab.ateormod.nebula_items"))
-                    .displayItems((parameters, output) -> {
-                        output.accept(ModItems.NEBULAGAS);
-                        output.accept(ModItems.NEBULA);
-                        output.accept(ModBlocks.NEBULA_FRAGMENT_BLOCK);
-                        output.accept(ModItems.UNPROCESSED_NEBULA);
-                        output.accept(ModBlocks.NEBULA_PLANKS);
-                        output.accept(ModBlocks.NEBULA_LOG);
-                        output.accept(ModItems.NEBULA_STICKS);
-                        output.accept(ModBlocks.NEBULA_SLABS);
-                        output.accept(ModBlocks.NEBULA_STAIRS);
-                    }).build());
+    public static final CreativeModeTab NEBULA_TAB = Registry.register(
+        BuiltInRegistries.CREATIVE_MODE_TAB,
+        Identifier.fromNamespaceAndPath(AteorMod.MOD_ID, "nebula_items"),
+        FabricCreativeModeTab.builder()
+            .icon(() -> new ItemStack(ModItems.NEBULAGAS))
+            .title(
+                Component.translatable("creativemodetab.ateormod.nebula_items")
+            )
+            .displayItems((parameters, output) -> {
+                output.accept(ModItems.NEBULAGAS);
+                output.accept(ModItems.NEBULA);
+                output.accept(ModBlocks.NEBULA_FRAGMENT_BLOCK);
+                output.accept(ModItems.UNPROCESSED_NEBULA);
+                output.accept(ModBlocks.NEBULA_PLANKS);
+                output.accept(ModBlocks.NEBULA_LOG);
+                output.accept(ModItems.NEBULA_STICKS);
+                output.accept(ModBlocks.NEBULA_SLABS);
+                output.accept(ModBlocks.NEBULA_STAIRS);
+                // minecraft new update preview blocks
+                output.accept(ModBlocks.WOOL_SLABS);
+                output.accept(ModBlocks.WOOL_STAIRS);
+            })
+            .build()
+    );
 
     public static void registertabs() {
-
-
-        AteorMod.LOGGER.info("Registering CreativeModTabs for " + AteorMod.MOD_ID );
+        AteorMod.LOGGER.info(
+            "Registering CreativeModTabs for " + AteorMod.MOD_ID
+        );
     }
 }
