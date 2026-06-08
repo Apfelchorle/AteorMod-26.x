@@ -24,6 +24,8 @@ public class ModTabs {
                 Component.translatable("creativemodetab.ateormod.nebula_items")
             )
             .displayItems((parameters, output) -> {
+                // this basicly just adds items to a custom creative tab
+                // output.accept( item goes here );
                 output.accept(ModItems.NEBULAGAS);
                 output.accept(ModItems.NEBULA);
                 output.accept(ModBlocks.NEBULA_FRAGMENT_BLOCK);

@@ -9,5 +9,7 @@
   "creativemodetab.ateormod.nebula_items": "Nebula Items",
   "block.ateor.nebula_fragment": "Nebula Fragment Block",
   "block.ateor.nebula_log": "Nebula Logs",
-  "block.ateor.nebula_planks": "Nebula Planks"
+  "block.ateor.nebula_planks": "Nebula Planks",
+  "block.ateor.wool_slabs": "Wool Slabs",
+  "block.ateor.wool_stairs": "Wool Stairs"
 }
