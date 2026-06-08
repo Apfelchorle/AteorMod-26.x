@@ -20,7 +20,11 @@ public class ModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
         blockModelGenerators.createTrivialCube(ModBlocks.NEBULA_FRAGMENT_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.NEBULA_LOG);
-        blockModelGenerators.createTrivialCube(ModBlocks.NEBULA_PLANKS);
+        //blockModelGenerators.createTrivialCube(ModBlocks.NEBULA_PLANKS);
+        blockModelGenerators.family(ModBlocks.NEBULA_PLANKS)
+                .stairs(ModBlocks.NEBULA_STAIRS)
+                .slab(ModBlocks.NEBULA_SLABS);
+
     }
 
     @Override

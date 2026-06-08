@@ -28,6 +28,8 @@ public class ModTabs {
                         output.accept(ModBlocks.NEBULA_PLANKS);
                         output.accept(ModBlocks.NEBULA_LOG);
                         output.accept(ModItems.NEBULA_STICKS);
+                        output.accept(ModBlocks.NEBULA_SLABS);
+                        output.accept(ModBlocks.NEBULA_STAIRS);
                     }).build());
 
     public static void registertabs() {

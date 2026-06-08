@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ateor:block/nebula_slabs"
+    },
+    "type=double": {
+      "model": "ateor:block/nebula_planks"
+    },
+    "type=top": {
+      "model": "ateor:block/nebula_slabs_top"
+    }
+  }
+}

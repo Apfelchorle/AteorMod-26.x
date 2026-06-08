@@ -11,6 +11,7 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.CraftingBookCategory;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
@@ -87,6 +88,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModItems.NEBULA), has(ModItems.NEBULA))
                         .group("nebulagas")
                         .save(output);
+
+                // Recipe for Nebula Stairs
+
+                stairBuilder(ModBlocks.NEBULA_STAIRS, Ingredient.of(ModBlocks.NEBULA_PLANKS))
+                        .unlockedBy(getHasName(ModBlocks.NEBULA_PLANKS), has(ModBlocks.NEBULA_PLANKS))
+                                .group("nebulagas")
+                                .save(output);
 
             }
         };

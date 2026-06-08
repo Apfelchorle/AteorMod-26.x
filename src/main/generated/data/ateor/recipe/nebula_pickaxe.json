@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "nebulagas",
+  "key": {
+    "N": "ateor:nebula_sticks",
+    "P": "ateor:nebula"
+  },
+  "pattern": [
+    "PPP",
+    " N ",
+    " N "
+  ],
+  "result": {
+    "id": "ateor:nebula_pickaxe"
+  }
+}

@@ -4,6 +4,8 @@
   "item.ateor.unprocessed_nebula": "Raw Nebula Ore",
   "item.ateor.nebula_pickaxe": "Nebula Pickaxe",
   "item.ateor.nebula_sticks": "Nebula Sticks",
+  "block.ateor.nebula_stairs": "Nebula Stairs",
+  "block.ateor.nebula_slabs": "Nebula Slabs",
   "creativemodetab.ateormod.nebula_items": "Nebula Items",
   "block.ateor.nebula_fragment": "Nebula Fragment Block",
   "block.ateor.nebula_log": "Nebula Logs",

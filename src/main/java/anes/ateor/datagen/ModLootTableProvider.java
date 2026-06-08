@@ -33,7 +33,12 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
     @Override
     public void generate() {
         add(ModBlocks.NEBULA_FRAGMENT_BLOCK,CreateMultiDrops(ModBlocks.NEBULA_FRAGMENT_BLOCK, ModItems.UNPROCESSED_NEBULA, 5f,8f));
-        add(ModBlocks.NEBULA_LOG,CreateMultiDrops(ModBlocks.NEBULA_LOG, Item.byBlock(ModBlocks.NEBULA_LOG), 1f,1f));
+
+        dropSelf(ModBlocks.NEBULA_LOG);
+        dropSelf(ModBlocks.NEBULA_PLANKS);
+
+        dropSelf(ModBlocks.NEBULA_STAIRS);
+        add(ModBlocks.NEBULA_SLABS, this::createSlabItemTable);
     }
 
 
