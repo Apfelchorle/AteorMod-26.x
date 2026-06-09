@@ -22,6 +22,7 @@ public class ModTabs {
             .icon(() -> new ItemStack(ModBlocks.PINK_WOOL_STAIRS))
             .title(Component.translatable("creativemodetab.ateormod.wool"))
             .displayItems((parameters, output) -> {
+                // minecraft new update preview blocks
                 output.accept(ModBlocks.WOOL_SLABS);
                 output.accept(ModBlocks.WOOL_STAIRS);
                 output.accept(ModBlocks.PINK_WOOL_SLABS);
@@ -48,6 +49,12 @@ public class ModTabs {
                 output.accept(ModBlocks.LIGHT_GRAY_WOOL_STAIRS);
                 output.accept(ModBlocks.LIME_WOOL_SLABS);
                 output.accept(ModBlocks.LIME_WOOL_STAIRS);
+                output.accept(ModBlocks.PURPLE_WOOL_SLABS);
+                output.accept(ModBlocks.PURPLE_WOOL_STAIRS);
+                output.accept(ModBlocks.CYAN_WOOL_SLABS);
+                output.accept(ModBlocks.CYAN_WOOL_STAIRS);
+                output.accept(ModBlocks.RED_WOOL_SLABS);
+                output.accept(ModBlocks.RED_WOOL_STAIRS);
             })
             .build()
     );
@@ -72,19 +79,6 @@ public class ModTabs {
                 output.accept(ModItems.NEBULA_STICKS);
                 output.accept(ModBlocks.NEBULA_SLABS);
                 output.accept(ModBlocks.NEBULA_STAIRS);
-                // minecraft new update preview blocks
-                output.accept(ModBlocks.WOOL_SLABS);
-                output.accept(ModBlocks.WOOL_STAIRS);
-                output.accept(ModBlocks.PINK_WOOL_SLABS);
-                output.accept(ModBlocks.PINK_WOOL_STAIRS);
-                output.accept(ModBlocks.BLACK_WOOL_SLABS);
-                output.accept(ModBlocks.BLACK_WOOL_STAIRS);
-                output.accept(ModBlocks.BLUE_WOOL_SLABS);
-                output.accept(ModBlocks.BLUE_WOOL_STAIRS);
-                output.accept(ModBlocks.YELLOW_WOOL_SLABS);
-                output.accept(ModBlocks.YELLOW_WOOL_STAIRS);
-                // output.accept(ModBlocks.CYAN_WOOL_SLABS);
-                // output.accept(ModBlocks.CYAN_WOOL_STAIRS);
             })
             .build()
     );

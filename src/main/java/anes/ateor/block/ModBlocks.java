@@ -81,13 +81,13 @@ public class ModBlocks {
         "red_wool_slabs"
     );
 
-    // public static final Block CYAN_WOOL_STAIRS = CreateWoolStairs(
-    //     "cyan_wool_stairs",
-    //     Blocks.CYAN_WOOL.defaultBlockState()
-    // );
-    // public static final Block CYAN_WOOL_SLABS = CreateWoolSlabs(
-    //     "cyan_wool_stairs"
-    // );
+    public static final Block CYAN_WOOL_STAIRS = CreateWoolStairs(
+        "cyan_wool_stairs",
+        Blocks.CYAN_WOOL.defaultBlockState()
+    );
+    public static final Block CYAN_WOOL_SLABS = CreateWoolSlabs(
+        "cyan_wool_slabs"
+    );
 
     public static final Block BLACK_WOOL_STAIRS = CreateWoolStairs(
         "black_wool_stairs",

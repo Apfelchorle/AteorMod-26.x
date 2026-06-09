@@ -46,10 +46,10 @@ public class ModelProvider extends FabricModelProvider {
             .slab(ModBlocks.BLACK_WOOL_SLABS)
             .stairs(ModBlocks.BLACK_WOOL_STAIRS);
 
-        // blockModelGenerators
-        //     .family(Blocks.CYAN_WOOL)
-        //     .slab(ModBlocks.CYAN_WOOL_SLABS)
-        //     .stairs(ModBlocks.CYAN_WOOL_STAIRS);
+         blockModelGenerators
+             .family(Blocks.CYAN_WOOL)
+             .slab(ModBlocks.CYAN_WOOL_SLABS)
+             .stairs(ModBlocks.CYAN_WOOL_STAIRS);
 
         blockModelGenerators
             .family(Blocks.YELLOW_WOOL)

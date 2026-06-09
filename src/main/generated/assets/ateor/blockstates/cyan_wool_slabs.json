@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ateor:block/cyan_wool_slabs"
+    },
+    "type=double": {
+      "model": "minecraft:block/cyan_wool"
+    },
+    "type=top": {
+      "model": "ateor:block/cyan_wool_slabs_top"
+    }
+  }
+}
