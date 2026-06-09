@@ -2,12 +2,10 @@ package anes.ateor.datagen;
 
 import anes.ateor.block.ModBlocks;
 import anes.ateor.item.ModItems;
-import java.util.Optional;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
-import net.minecraft.client.data.models.model.ModelTemplate;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.world.level.block.Blocks;
 
@@ -46,10 +44,10 @@ public class ModelProvider extends FabricModelProvider {
             .slab(ModBlocks.BLACK_WOOL_SLABS)
             .stairs(ModBlocks.BLACK_WOOL_STAIRS);
 
-         blockModelGenerators
-             .family(Blocks.CYAN_WOOL)
-             .slab(ModBlocks.CYAN_WOOL_SLABS)
-             .stairs(ModBlocks.CYAN_WOOL_STAIRS);
+        blockModelGenerators
+            .family(Blocks.CYAN_WOOL)
+            .slab(ModBlocks.CYAN_WOOL_SLABS)
+            .stairs(ModBlocks.CYAN_WOOL_STAIRS);
 
         blockModelGenerators
             .family(Blocks.YELLOW_WOOL)

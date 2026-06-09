@@ -2,7 +2,6 @@ package anes.ateor.datagen;
 
 import anes.ateor.block.ModBlocks;
 import anes.ateor.item.ModItems;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -13,9 +12,7 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
-import net.minecraft.world.item.crafting.CraftingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 
@@ -54,9 +51,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 );
 
                 // Recipe for Nebulagas.
-                List<ItemLike> NEBULAGAS_CONSUMABLES = List.of(
-                    ModItems.NEBULAGAS
-                );
 
                 shapeless(RecipeCategory.BREWING, ModItems.NEBULAGAS)
                     .requires(ModItems.NEBULA)
@@ -69,8 +63,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                     .save(output);
 
                 // Recipe For Nebula Planks
-
-                List<ItemLike> NEBULA_WOOD = List.of(ModBlocks.NEBULA_PLANKS);
 
                 shapeless(
                     RecipeCategory.BUILDING_BLOCKS,
@@ -85,8 +77,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                     .save(output);
 
                 // Recipe For Nebula Sticks
-
-                List<ItemLike> NEBULA_STICKS = List.of(ModItems.NEBULA_STICKS);
 
                 shaped(RecipeCategory.MISC, ModItems.NEBULA_STICKS)
                     .pattern("P")
