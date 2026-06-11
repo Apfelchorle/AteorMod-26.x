@@ -2,7 +2,6 @@ package anes.ateor.block;
 
 import anes.ateor.AteorMod;
 import java.util.function.Function;
-import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
