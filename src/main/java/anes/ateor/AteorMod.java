@@ -2,6 +2,7 @@ package anes.ateor;
 
 import anes.ateor.CustomCreativeTab.ModTabs;
 import anes.ateor.block.ModBlocks;
+import anes.ateor.block.ModdedBlocks;
 import anes.ateor.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -20,5 +21,6 @@ public class AteorMod implements ModInitializer {
         ModBlocks.registerModBlocks();
         ModTabs.registertabs();
         ModItems.registerModItem();
+        ModdedBlocks.InitModdedBlocks();
     }
 }

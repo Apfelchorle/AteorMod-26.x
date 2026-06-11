@@ -1,22 +1,13 @@
 package anes.ateor.block;
 
 import anes.ateor.AteorMod;
-import java.util.function.Function;
-import net.minecraft.core.Registry;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.StairBlock;
-import net.minecraft.world.level.block.WallBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.MapColor;
+
+import static net.minecraft.world.level.block.Blocks.litBlockEmission;
+import static anes.ateor.block.ModdedBlocks.*;
 
 public class ModBlocks {
 
@@ -222,20 +213,6 @@ public class ModBlocks {
     );
 
     // BLOCKS
-
-    // public static final Block GRASS_BLOCK_STAIRS = CreateStairs("grass_block_stairs", Blocks.GRASS_BLOCK.defaultBlockState(), SoundType.GRASS);
-    // public static final Block GRASS_BLOCK_SLABS = CreateSlabs("grass_block_slabs", SoundType.GRASS);
-
-    //    public static final Block OAK_WOOD_STAIRS = CreateStairs(
-    //        "oak_wood_stairs",
-    //        Blocks.OAK_WOOD.defaultBlockState(),
-    //        SoundType.WOOD
-    //    );
-    //    public static final Block OAK_WOOD_SLABS = CreateSlabs(
-    //        "oak_wood_slabs",
-    //        SoundType.WOOD
-    //    );
-
     // concrete
     public static final Block BLACK_CONCRETE_STAIRS = CreateStairs(
         "black_concrete_stairs",
@@ -299,6 +276,7 @@ public class ModBlocks {
 
     // BLOCK CREATION METHODS
 
+
     private static Block CreateWalls(String name, SoundType soundType) {
         return registerBlock(name, properties ->
             new WallBlock(properties.strength(3F).sound(soundType))
@@ -334,50 +312,12 @@ public class ModBlocks {
         return registerBlock(name, properties ->
             new SlabBlock(properties.strength(1F).sound(SoundType.WOOL))
         );
+
     }
 
-    private static Block registerBlock(
-        String name,
-        Function<BlockBehaviour.Properties, Block> function
-    ) {
-        Block toRegister = function.apply(
-            BlockBehaviour.Properties.of().setId(
-                ResourceKey.create(
-                    Registries.BLOCK,
-                    Identifier.fromNamespaceAndPath(AteorMod.MOD_ID, name)
-                )
-            )
-        );
-        registerBlockItem(name, toRegister);
-        return Registry.register(
-            BuiltInRegistries.BLOCK,
-            Identifier.fromNamespaceAndPath(AteorMod.MOD_ID, name),
-            toRegister
-        );
-    }
-
-    private static void registerBlockItem(String name, Block block) {
-        Registry.register(
-            BuiltInRegistries.ITEM,
-            Identifier.fromNamespaceAndPath(AteorMod.MOD_ID, name),
-            new BlockItem(
-                block,
-                new Item.Properties()
-                    .useBlockDescriptionPrefix()
-                    .setId(
-                        ResourceKey.create(
-                            Registries.ITEM,
-                            Identifier.fromNamespaceAndPath(
-                                AteorMod.MOD_ID,
-                                name
-                            )
-                        )
-                    )
-            )
-        );
-    }
+    // register mod blocks method
 
     public static void registerModBlocks() {
-        AteorMod.LOGGER.info("Registering ModBlocks");
+        AteorMod.LOGGER.info("register mod blocks for ateor");
     }
 }

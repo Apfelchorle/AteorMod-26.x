@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ateor:block/blue_concrete_slabs"
+    },
+    "type=double": {
+      "model": "minecraft:block/blue_concrete"
+    },
+    "type=top": {
+      "model": "ateor:block/blue_concrete_slabs_top"
+    }
+  }
+}
