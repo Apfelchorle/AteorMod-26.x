@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ateor:block/end_stone_slabs"
+    },
+    "type=double": {
+      "model": "minecraft:block/end_stone"
+    },
+    "type=top": {
+      "model": "ateor:block/end_stone_slabs_top"
+    }
+  }
+}

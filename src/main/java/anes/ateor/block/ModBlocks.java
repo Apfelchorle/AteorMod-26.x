@@ -2,6 +2,7 @@ package anes.ateor.block;
 
 import anes.ateor.AteorMod;
 import java.util.function.Function;
+import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -14,6 +15,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -70,6 +72,11 @@ public class ModBlocks {
                 Blocks.WHITE_WOOL.defaultBlockState(),
                 properties.strength(3F).sound(SoundType.WOOL)
             )
+    );
+
+    public static final Block WOOL_WALLS = CreateWalls(
+        "wool_walls",
+        SoundType.WOOL
     );
 
     // Wool Stairs + Slabs Created Using CreateWool Method
@@ -202,6 +209,118 @@ public class ModBlocks {
     public static final Block PURPLE_WOOL_SLABS = CreateWoolSlabs(
         "purple_wool_slabs"
     );
+
+    // STONE BASED BLOCKS
+
+    public static final Block END_STONE_STAIRS = CreateStairs(
+        "end_stone_stairs",
+        Blocks.END_STONE.defaultBlockState(),
+        SoundType.STONE
+    );
+    public static final Block END_STONE_SLABS = CreateSlabs(
+        "end_stone_slabs",
+        SoundType.STONE
+    );
+
+    // BLOCKS
+
+    // public static final Block GRASS_BLOCK_STAIRS = CreateStairs("grass_block_stairs", Blocks.GRASS_BLOCK.defaultBlockState(), SoundType.GRASS);
+    // public static final Block GRASS_BLOCK_SLABS = CreateSlabs("grass_block_slabs", SoundType.GRASS);
+
+    //    public static final Block OAK_WOOD_STAIRS = CreateStairs(
+    //        "oak_wood_stairs",
+    //        Blocks.OAK_WOOD.defaultBlockState(),
+    //        SoundType.WOOD
+    //    );
+    //    public static final Block OAK_WOOD_SLABS = CreateSlabs(
+    //        "oak_wood_slabs",
+    //        SoundType.WOOD
+    //    );
+
+    // concrete
+    public static final Block BLACK_CONCRETE_STAIRS = CreateStairs(
+        "black_concrete_stairs",
+        Blocks.BLACK_CONCRETE.defaultBlockState(),
+        SoundType.STONE
+    );
+
+    public static final Block BLACK_CONCRETE_SLABS = CreateSlabs(
+        "black_concrete_slabs",
+        SoundType.STONE
+    );
+
+    public static final Block BLUE_CONCRETE_STAIRS = CreateStairs(
+        "blue_concrete_stairs",
+        Blocks.BLUE_CONCRETE.defaultBlockState(),
+        SoundType.STONE
+    );
+
+    public static final Block BLUE_CONCRETE_SLABS = CreateSlabs(
+        "blue_concrete_slabs",
+        SoundType.STONE
+    );
+
+    public static final Block CYAN_CONCRETE_STAIRS = CreateStairs(
+        "cyan_concrete_stairs",
+        Blocks.CYAN_CONCRETE.defaultBlockState(),
+        SoundType.STONE
+    );
+
+    public static final Block CYAN_CONCRETE_SLABS = CreateSlabs(
+        "cyan_concrete_slabs",
+        SoundType.STONE
+    );
+
+    public static final Block CYAN_CONCRETE_WALLS = CreateWalls(
+        "cyan_concrete_walls",
+        SoundType.STONE
+    );
+
+    public static final Block REDSTONE_BLOCK_STAIRS = CreateStairs(
+        "redstone_block_stairs",
+        Blocks.REDSTONE_BLOCK.defaultBlockState(),
+        SoundType.STONE
+    );
+
+    public static final Block REDSTONE_BLOCK_SLABS = CreateSlabs(
+        "redstone_block_slabs",
+        SoundType.STONE
+    );
+
+    public static final Block REDSTONE_LAMP_STAIRS = CreateStairs(
+        "redstone_lamp_stairs",
+        Blocks.REDSTONE_LAMP.defaultBlockState(),
+        SoundType.STONE
+    );
+
+    public static final Block REDSTONE_LAMP_SLABS = CreateSlabs(
+        "redstone_lamp_slabs",
+        SoundType.STONE
+    );
+
+    // BLOCK CREATION METHODS
+
+    private static Block CreateWalls(String name, SoundType soundType) {
+        return registerBlock(name, properties ->
+            new WallBlock(properties.strength(3F).sound(soundType))
+        );
+    }
+
+    private static Block CreateStairs(
+        String name,
+        BlockState blockState,
+        SoundType soundType
+    ) {
+        return registerBlock(name, properties ->
+            new StairBlock(blockState, properties.strength(3F).sound(soundType))
+        );
+    }
+
+    private static Block CreateSlabs(String name, SoundType soundType) {
+        return registerBlock(name, properties ->
+            new SlabBlock(properties.strength(3F).sound(soundType))
+        );
+    }
 
     private static Block CreateWoolStairs(String name, BlockState blockState) {
         return registerBlock(name, properties ->

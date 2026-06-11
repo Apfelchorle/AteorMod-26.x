@@ -62,6 +62,7 @@ public class ModelProvider extends FabricModelProvider {
         blockModelGenerators
             .family(Blocks.WHITE_WOOL)
             .slab(ModBlocks.WOOL_SLABS)
+            .wall(ModBlocks.WOOL_WALLS)
             .stairs(ModBlocks.WOOL_STAIRS);
 
         blockModelGenerators
@@ -108,6 +109,55 @@ public class ModelProvider extends FabricModelProvider {
             .family(Blocks.LIGHT_BLUE_WOOL)
             .slab(ModBlocks.LIGHT_BLUE_WOOL_SLABS)
             .stairs(ModBlocks.LIGHT_BLUE_WOOL_STAIRS);
+
+        // stone type blocks
+
+        blockModelGenerators
+            .family(Blocks.END_STONE)
+            .stairs(ModBlocks.END_STONE_STAIRS)
+            .slab(ModBlocks.END_STONE_SLABS);
+
+        // grass type blocks
+
+        // blockModelGenerators
+        //         .family(Blocks.GRASS_BLOCK)
+        //         .stairs(ModBlocks.GRASS_BLOCK_STAIRS)
+        //         .slab(ModBlocks.GRASS_BLOCK_SLABS);
+
+        //        blockModelGenerators
+        //            .family(Blocks.OAK_WOOD)
+        //            .stairs(ModBlocks.OAK_WOOD_STAIRS)
+        //            .slab(ModBlocks.OAK_WOOD_SLABS);
+
+        // concrete
+        blockModelGenerators
+            .family(Blocks.BLACK_CONCRETE)
+            .stairs(ModBlocks.BLACK_CONCRETE_STAIRS)
+            .slab(ModBlocks.BLACK_CONCRETE_SLABS);
+
+        blockModelGenerators
+            .family(Blocks.CYAN_CONCRETE)
+            .stairs(ModBlocks.CYAN_CONCRETE_STAIRS)
+            .wall(ModBlocks.CYAN_CONCRETE_WALLS)
+            .slab(ModBlocks.CYAN_CONCRETE_SLABS);
+
+        blockModelGenerators
+                .family(Blocks.BLUE_CONCRETE)
+                .slab(ModBlocks.BLUE_CONCRETE_SLABS)
+                .stairs(ModBlocks.BLUE_CONCRETE_STAIRS);
+
+        // fun
+
+        blockModelGenerators
+            .family(Blocks.REDSTONE_BLOCK)
+            .stairs(ModBlocks.REDSTONE_BLOCK_STAIRS)
+            .slab(ModBlocks.REDSTONE_BLOCK_SLABS);
+
+        blockModelGenerators
+            .family(Blocks.REDSTONE_LAMP)
+            .stairs(ModBlocks.REDSTONE_LAMP_STAIRS)
+            .slab(ModBlocks.REDSTONE_LAMP_SLABS);
+
     }
 
     @Override

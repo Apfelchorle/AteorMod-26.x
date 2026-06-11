@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ateor:block/redstone_lamp_slabs"
+    },
+    "type=double": {
+      "model": "minecraft:block/redstone_lamp"
+    },
+    "type=top": {
+      "model": "ateor:block/redstone_lamp_slabs_top"
+    }
+  }
+}
